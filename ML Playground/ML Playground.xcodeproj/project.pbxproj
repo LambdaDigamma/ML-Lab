@@ -26,6 +26,12 @@
 		DF0F175E2AF4410D006897A9 /* OverlayButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F175D2AF4410D006897A9 /* OverlayButtonStyle.swift */; };
 		DF0F17602AF4422D006897A9 /* ImageClassificationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */; };
 		DF0F17622AF446CD006897A9 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17612AF446CD006897A9 /* DataState.swift */; };
+		DF0F17642AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17632AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		DF0F17662AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17652AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift */; };
+		DF0F17682AF44DF1006897A9 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */; };
+		DF0F176A2AF4514E006897A9 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17692AF4514E006897A9 /* Double+Extensions.swift */; };
+		DF0F176C2AF454C8006897A9 /* ModelInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */; };
+		DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		DF0F175D2AF4410D006897A9 /* OverlayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayButtonStyle.swift; sourceTree = "<group>"; };
 		DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationInformationView.swift; sourceTree = "<group>"; };
 		DF0F17612AF446CD006897A9 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		DF0F17632AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		DF0F17652AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		DF0F17692AF4514E006897A9 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInformationView.swift; sourceTree = "<group>"; };
+		DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,8 @@
 				DF0F17592AF4399E006897A9 /* PhotoViewer.swift */,
 				DF0F175B2AF43A7D006897A9 /* ImageViewer.swift */,
 				DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */,
+				DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */,
+				DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */,
 			);
 			path = Classification;
 			sourceTree = "<group>";
@@ -134,6 +148,10 @@
 				DF0F17552AF419CD006897A9 /* UIViewController+Extensions.swift */,
 				DF0F175D2AF4410D006897A9 /* OverlayButtonStyle.swift */,
 				DF0F17612AF446CD006897A9 /* DataState.swift */,
+				DF0F17632AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				DF0F17652AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift */,
+				DF0F17692AF4514E006897A9 /* Double+Extensions.swift */,
+				DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,15 +228,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0F17492AF40D9E006897A9 /* MenuItemCellView.swift in Sources */,
+				DF0F17682AF44DF1006897A9 /* ImagePredictor.swift in Sources */,
+				DF0F17642AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				DF0F17512AF414FD006897A9 /* ImageClassificationEmptyState.swift in Sources */,
+				DF0F176A2AF4514E006897A9 /* Double+Extensions.swift in Sources */,
 				DF0F175E2AF4410D006897A9 /* OverlayButtonStyle.swift in Sources */,
 				DF0F17562AF419CD006897A9 /* UIViewController+Extensions.swift in Sources */,
 				DF0F17302AF4074E006897A9 /* AppDelegate.swift in Sources */,
 				DF0F17622AF446CD006897A9 /* DataState.swift in Sources */,
 				DF0F17532AF41848006897A9 /* ImageClassificationScreen.swift in Sources */,
+				DF0F176C2AF454C8006897A9 /* ModelInformationView.swift in Sources */,
 				DF0F174C2AF41253006897A9 /* SqueezeNet.mlmodel in Sources */,
 				DF0F17322AF4074E006897A9 /* SceneDelegate.swift in Sources */,
+				DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */,
 				DF0F17442AF4077E006897A9 /* MenuViewController.swift in Sources */,
+				DF0F17662AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift in Sources */,
 				DF0F17472AF40928006897A9 /* MenuItem.swift in Sources */,
 				DF0F174F2AF414EF006897A9 /* ImageClassificationViewController.swift in Sources */,
 				DF0F175C2AF43A7D006897A9 /* ImageViewer.swift in Sources */,

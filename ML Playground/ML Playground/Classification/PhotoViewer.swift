@@ -60,7 +60,7 @@ struct PhotoViewer: View {
                 
                 Label("Close", systemImage: "xmark")
                     .labelStyle(.iconOnly)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.primary)
                     .padding(12)
                     .background(.regularMaterial,
                                 in: RoundedRectangle(cornerRadius: 8))
@@ -118,4 +118,5 @@ struct PhotoViewer: View {
 
 #Preview {
     PhotoViewer(image: UIImage(named: "redcharlie elephant")!)
+        .preferredColorScheme(.dark)
 }

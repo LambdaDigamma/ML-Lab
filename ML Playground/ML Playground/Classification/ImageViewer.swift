@@ -28,7 +28,7 @@ struct ImageViewer: View {
                 
                 Label("Fullscreen", systemImage: "arrow.down.left.and.arrow.up.right")
                     .labelStyle(.iconOnly)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.primary)
                     .padding(12)
                     .background(.regularMaterial,
                                 in: RoundedRectangle(cornerRadius: 8))

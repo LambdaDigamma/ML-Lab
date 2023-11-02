@@ -56,7 +56,13 @@ class ImageClassificationViewController: UIViewController {
     
     private func showCamera() {
         
+        // Show options for the source picker only if the camera is available.
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            present(photoPicker, animated: false)
+            return
+        }
         
+        present(cameraPicker, animated: true)
         
     }
     

@@ -53,6 +53,8 @@ struct ImageClassificationScreen: View {
                     result: viewModel.result
                 )
                 
+                ModelInformationView(modelInformation: viewModel.modelInformation)
+                
             }
             .padding()
             

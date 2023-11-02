@@ -25,12 +25,11 @@ struct ImageClassificationInformationView: View {
     
     public init(result: DataState<ImageClassificationResult, Error>) {
         self.result = result
-        
     }
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        BadgeContainer(name: "Results") {
             
             Grid(alignment: .trailing, horizontalSpacing: 8, verticalSpacing: 4) {
                 ForEach((result.value?.items ?? placeholderItems()), id: \.self) { item in
@@ -53,11 +52,6 @@ struct ImageClassificationInformationView: View {
             .redacted(reason: result.loading ? .placeholder : [])
             
         }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Material.thin)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 6)
         
     }
     
@@ -80,11 +74,14 @@ struct ImageClassificationInformationView: View {
 
 #Preview("Has Results") {
     
-    let result = ImageClassificationResult(items: [
-        ImageClassItem(text: "Pot", percentage: 0.314),
-        ImageClassItem(text: "Coral Reef", percentage: 0.184),
-        ImageClassItem(text: "Water", percentage: 0.06)
-    ])
+    let result = ImageClassificationResult(
+        label: nil,
+        items: [
+            ImageClassItem(text: "Pot", percentage: 0.314),
+            ImageClassItem(text: "Coral Reef", percentage: 0.184),
+            ImageClassItem(text: "Water", percentage: 0.06)
+        ]
+    )
     
     return ImageClassificationInformationView(result: .success(result))
         .padding()

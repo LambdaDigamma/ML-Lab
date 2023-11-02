@@ -15,6 +15,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pc1-yx-wDG">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="regular"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="eoN-QZ-LDT" kind="relationship" relationship="rootViewController" id="YoG-Ra-J1r"/>
