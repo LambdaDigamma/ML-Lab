@@ -44,6 +44,7 @@
 		A910B2AB2AE168460055B318 /* Core and Create MLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core and Create MLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A910B2AF2AE168460055B318 /* Core_and_Create_MLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_and_Create_MLUITests.swift; sourceTree = "<group>"; };
 		A910B2B12AE168460055B318 /* Core_and_Create_MLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_and_Create_MLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF74E2F92AED7115001E8495 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		A910B2882AE168450055B318 = {
 			isa = PBXGroup;
 			children = (
+				DF74E2F92AED7115001E8495 /* README.md */,
 				A910B2932AE168450055B318 /* Core and Create ML */,
 				A910B2A42AE168460055B318 /* Core and Create MLTests */,
 				A910B2AE2AE168460055B318 /* Core and Create MLUITests */,
