@@ -29,9 +29,17 @@ class ImageClassificationViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.largeTitleDisplayMode = .never
+        
+    }
+    
     // MARK: - UI -
     
     private func setupUI() {
+        
         self.addSubSwiftUIView(ImageClassificationScreen(viewModel: viewModel, onAction: onAction), to: view)
     }
     

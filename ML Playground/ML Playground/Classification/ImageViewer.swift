@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct ImageViewer: View {
+struct ImageViewer<Overlay: View>: View {
     
     @State var fullscreen = false
     
     var image: UIImage
+    
+    var overlay: (() -> Overlay)? = nil
     
     var body: some View {
         
@@ -20,6 +22,13 @@ struct ImageViewer: View {
             Image(uiImage: image)
                 .resizable()
                 .scaledToFit()
+                .overlay {
+                    
+                    if let overlay {
+                        overlay()
+                    }
+                    
+                }
             
         }
         .overlay(alignment: .topTrailing, content: {
@@ -51,6 +60,6 @@ struct ImageViewer: View {
 }
 
 #Preview {
-    ImageViewer(image: UIImage(named: "redcharlie elephant")!)
+    ImageViewer<EmptyView>(image: UIImage(named: "redcharlie elephant")!)
         .aspectRatio(1, contentMode: .fit)
 }

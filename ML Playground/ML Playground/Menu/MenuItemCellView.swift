@@ -25,48 +25,62 @@ public struct MenuItemCellView: View {
             .shadow(radius: 8)
             .overlay(alignment: .topLeading, content: {
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 16) {
                     
                     Text(menuItem.title)
                         .foregroundStyle(Color(menuItem.foregroundColor))
                         .font(.title2.weight(.bold))
                     
+                    Group {
+                        if menuItem.type == .classification {
+                            Text("\(Image(systemName: "photo.fill.on.rectangle.fill")) Classifier")
+                        } else {
+                            Text("\(Image(systemName: "dot.viewfinder")) Detector")
+                        }
+                    }
+                    .foregroundStyle(Color(menuItem.foregroundColor))
+                    
+                    if let description = menuItem.description {
+                        
+                        Text(description)
+                            .foregroundStyle(Color(menuItem.foregroundColor))
+                        
+                    }
+                    
                 }
-                .padding()
+                .padding(20)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
             })
+        
+    }
+    
+}
 
-        //        .aspectRatio(1.5, contentMode: .fill)
-        //        .background(Color(menuItem.backgroundColor))
-
+struct MenuListCellButtonStyle: ButtonStyle {
+    
+    func makeBody(configuration: Configuration) -> some View {
         
-//        {
-//            VStack {
-//                
-//                Text(menuItem.text)
-//                    .foregroundStyle(Color(menuItem.foregroundColor))
-//                    .font(.title2.weight(.bold))
-//                
-//            }
-//            Text("ABCDE")
-//        }
-//        .frame(maxWidth: .infinity)
-//        .aspectRatio(1.5, contentMode: .fill)
-//        .background(Color(menuItem.backgroundColor))
-        
-        
-//        .padding()
-//        .frame(maxWidth: .infinity, alignment: .leading)
-//
-//        .clipShape(RoundedRectangle(cornerRadius: 12))
-//        .shadow(radius: 8)
+        configuration.label
+            .animation(.interactiveSpring, value: 1)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
         
     }
     
 }
 
 #Preview {
-    MenuItemCellView(menuItem: .init(id: 1, text: "Animal Classification", backgroundColor: .orange, foregroundColor: .white))
-        .padding()
+    Button(action: {}) {
+        MenuItemCellView(
+            menuItem: .init(
+                id: 1,
+                text: "Animal Classification",
+                type: .classification,
+                backgroundColor: .orange,
+                foregroundColor: .white
+            )
+        )
+    }
+    .buttonStyle(MenuListCellButtonStyle())
+    .padding()
 }

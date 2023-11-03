@@ -155,10 +155,10 @@ class MenuViewController: UIViewController, UICollectionViewDelegate {
     private func populateCollectionViewDataSource() {
         
         let classifier: [MenuItem] = [
-            .init(id: 1, text: "Animal Classifier", backgroundColor: .black, foregroundColor: .white)
+            .init(id: 1, text: "Animal Classifier", type: .classification, backgroundColor: .black, foregroundColor: .white)
         ]
         let objectDetectors: [MenuItem] = [
-            .init(id: 1, text: "Fracture Detector", backgroundColor: .orange, foregroundColor: .white)
+            .init(id: 1, text: "Fracture Detector", type: .objectDetector, backgroundColor: .orange, foregroundColor: .white)
         ]
         
         var snapshot = NSDiffableDataSourceSnapshot<MenuItemType, MenuItem>()

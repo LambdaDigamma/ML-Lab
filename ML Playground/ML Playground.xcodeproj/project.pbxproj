@@ -17,7 +17,7 @@
 		DF0F17492AF40D9E006897A9 /* MenuItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */; };
 		DF0F174C2AF41253006897A9 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */; };
 		DF0F174F2AF414EF006897A9 /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F174E2AF414EF006897A9 /* ImageClassificationViewController.swift */; };
-		DF0F17512AF414FD006897A9 /* ImageClassificationEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17502AF414FD006897A9 /* ImageClassificationEmptyState.swift */; };
+		DF0F17512AF414FD006897A9 /* PhotoProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17502AF414FD006897A9 /* PhotoProviderView.swift */; };
 		DF0F17532AF41848006897A9 /* ImageClassificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */; };
 		DF0F17562AF419CD006897A9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17552AF419CD006897A9 /* UIViewController+Extensions.swift */; };
 		DF0F17582AF42A63006897A9 /* ImageClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17572AF42A63006897A9 /* ImageClassificationViewModel.swift */; };
@@ -32,6 +32,17 @@
 		DF0F176A2AF4514E006897A9 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17692AF4514E006897A9 /* Double+Extensions.swift */; };
 		DF0F176C2AF454C8006897A9 /* ModelInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */; };
 		DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */; };
+		DF8678692AF56AA800FDDCD6 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678682AF56AA800FDDCD6 /* MenuListView.swift */; };
+		DF86786D2AF56BCC00FDDCD6 /* Models+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */; };
+		DF86786F2AF56D9E00FDDCD6 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */; };
+		DF8678722AF572B300FDDCD6 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */; };
+		DF8678742AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */; };
+		DF8678762AF5745B00FDDCD6 /* ObjectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678752AF5745B00FDDCD6 /* ObjectDetector.swift */; };
+		DF86787B2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86787A2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift */; };
+		DF86787D2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86787C2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift */; };
+		DF86787F2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */; };
+		DF8678812AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */; };
+		DF8678832AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,12 +58,12 @@
 		DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCellView.swift; sourceTree = "<group>"; };
 		DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		DF0F174E2AF414EF006897A9 /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
-		DF0F17502AF414FD006897A9 /* ImageClassificationEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationEmptyState.swift; sourceTree = "<group>"; };
+		DF0F17502AF414FD006897A9 /* PhotoProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoProviderView.swift; path = ../Classification/PhotoProviderView.swift; sourceTree = "<group>"; };
 		DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationScreen.swift; sourceTree = "<group>"; };
 		DF0F17552AF419CD006897A9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		DF0F17572AF42A63006897A9 /* ImageClassificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewModel.swift; sourceTree = "<group>"; };
-		DF0F17592AF4399E006897A9 /* PhotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
-		DF0F175B2AF43A7D006897A9 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
+		DF0F17592AF4399E006897A9 /* PhotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoViewer.swift; path = ../Classification/PhotoViewer.swift; sourceTree = "<group>"; };
+		DF0F175B2AF43A7D006897A9 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageViewer.swift; path = ../Classification/ImageViewer.swift; sourceTree = "<group>"; };
 		DF0F175D2AF4410D006897A9 /* OverlayButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayButtonStyle.swift; sourceTree = "<group>"; };
 		DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationInformationView.swift; sourceTree = "<group>"; };
 		DF0F17612AF446CD006897A9 /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
@@ -60,8 +71,19 @@
 		DF0F17652AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		DF0F17692AF4514E006897A9 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
-		DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInformationView.swift; sourceTree = "<group>"; };
+		DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelInformationView.swift; path = ../Classification/ModelInformationView.swift; sourceTree = "<group>"; };
 		DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeContainer.swift; sourceTree = "<group>"; };
+		DF8678682AF56AA800FDDCD6 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Extensions.swift"; sourceTree = "<group>"; };
+		DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
+		DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
+		DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "YOLOv3 Tiny Int8 LUT.mlpackage"; sourceTree = "<group>"; };
+		DF8678752AF5745B00FDDCD6 /* ObjectDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetector.swift; sourceTree = "<group>"; };
+		DF86787A2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectorScreen.swift; sourceTree = "<group>"; };
+		DF86787C2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectorViewModel.swift; sourceTree = "<group>"; };
+		DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxOverlayRenderer.swift; sourceTree = "<group>"; };
+		DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Int8LUT.mlmodel; sourceTree = "<group>"; };
+		DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectClassificationInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +120,9 @@
 				DF0F17312AF4074E006897A9 /* SceneDelegate.swift */,
 				DF0F174A2AF41249006897A9 /* Models */,
 				DF0F17452AF4091E006897A9 /* Menu */,
+				DF8678792AF57A4000FDDCD6 /* Common */,
 				DF0F174D2AF413E7006897A9 /* Classification */,
+				DF8678702AF5721200FDDCD6 /* Object Detector */,
 				DF0F17542AF419B7006897A9 /* Extensions */,
 				DF0F17352AF4074E006897A9 /* Main.storyboard */,
 				DF0F17382AF40750006897A9 /* Assets.xcassets */,
@@ -114,6 +138,8 @@
 				DF0F17432AF4077E006897A9 /* MenuViewController.swift */,
 				DF0F17462AF40928006897A9 /* MenuItem.swift */,
 				DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */,
+				DF8678682AF56AA800FDDCD6 /* MenuListView.swift */,
+				DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -121,7 +147,10 @@
 		DF0F174A2AF41249006897A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */,
+				DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */,
 				DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */,
+				DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,15 +158,11 @@
 		DF0F174D2AF413E7006897A9 /* Classification */ = {
 			isa = PBXGroup;
 			children = (
-				DF0F174E2AF414EF006897A9 /* ImageClassificationViewController.swift */,
-				DF0F17502AF414FD006897A9 /* ImageClassificationEmptyState.swift */,
-				DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */,
-				DF0F17572AF42A63006897A9 /* ImageClassificationViewModel.swift */,
-				DF0F17592AF4399E006897A9 /* PhotoViewer.swift */,
-				DF0F175B2AF43A7D006897A9 /* ImageViewer.swift */,
 				DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */,
+				DF0F174E2AF414EF006897A9 /* ImageClassificationViewController.swift */,
+				DF0F17572AF42A63006897A9 /* ImageClassificationViewModel.swift */,
+				DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */,
 				DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */,
-				DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */,
 			);
 			path = Classification;
 			sourceTree = "<group>";
@@ -154,6 +179,30 @@
 				DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF8678702AF5721200FDDCD6 /* Object Detector */ = {
+			isa = PBXGroup;
+			children = (
+				DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */,
+				DF8678752AF5745B00FDDCD6 /* ObjectDetector.swift */,
+				DF86787A2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift */,
+				DF86787C2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift */,
+				DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */,
+				DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */,
+			);
+			path = "Object Detector";
+			sourceTree = "<group>";
+		};
+		DF8678792AF57A4000FDDCD6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F175B2AF43A7D006897A9 /* ImageViewer.swift */,
+				DF0F176B2AF454C8006897A9 /* ModelInformationView.swift */,
+				DF0F17502AF414FD006897A9 /* PhotoProviderView.swift */,
+				DF0F17592AF4399E006897A9 /* PhotoViewer.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,24 +278,35 @@
 			files = (
 				DF0F17492AF40D9E006897A9 /* MenuItemCellView.swift in Sources */,
 				DF0F17682AF44DF1006897A9 /* ImagePredictor.swift in Sources */,
+				DF8678762AF5745B00FDDCD6 /* ObjectDetector.swift in Sources */,
 				DF0F17642AF44C65006897A9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
-				DF0F17512AF414FD006897A9 /* ImageClassificationEmptyState.swift in Sources */,
+				DF0F17512AF414FD006897A9 /* PhotoProviderView.swift in Sources */,
+				DF8678742AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage in Sources */,
 				DF0F176A2AF4514E006897A9 /* Double+Extensions.swift in Sources */,
 				DF0F175E2AF4410D006897A9 /* OverlayButtonStyle.swift in Sources */,
 				DF0F17562AF419CD006897A9 /* UIViewController+Extensions.swift in Sources */,
 				DF0F17302AF4074E006897A9 /* AppDelegate.swift in Sources */,
+				DF8678832AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift in Sources */,
 				DF0F17622AF446CD006897A9 /* DataState.swift in Sources */,
 				DF0F17532AF41848006897A9 /* ImageClassificationScreen.swift in Sources */,
+				DF86786D2AF56BCC00FDDCD6 /* Models+Extensions.swift in Sources */,
 				DF0F176C2AF454C8006897A9 /* ModelInformationView.swift in Sources */,
 				DF0F174C2AF41253006897A9 /* SqueezeNet.mlmodel in Sources */,
 				DF0F17322AF4074E006897A9 /* SceneDelegate.swift in Sources */,
 				DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */,
+				DF8678812AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel in Sources */,
+				DF8678692AF56AA800FDDCD6 /* MenuListView.swift in Sources */,
+				DF86787F2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift in Sources */,
 				DF0F17442AF4077E006897A9 /* MenuViewController.swift in Sources */,
+				DF8678722AF572B300FDDCD6 /* ObjectDetectionViewController.swift in Sources */,
 				DF0F17662AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift in Sources */,
+				DF86787D2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift in Sources */,
 				DF0F17472AF40928006897A9 /* MenuItem.swift in Sources */,
 				DF0F174F2AF414EF006897A9 /* ImageClassificationViewController.swift in Sources */,
 				DF0F175C2AF43A7D006897A9 /* ImageViewer.swift in Sources */,
 				DF0F175A2AF4399E006897A9 /* PhotoViewer.swift in Sources */,
+				DF86786F2AF56D9E00FDDCD6 /* MenuListViewController.swift in Sources */,
+				DF86787B2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift in Sources */,
 				DF0F17582AF42A63006897A9 /* ImageClassificationViewModel.swift in Sources */,
 				DF0F17602AF4422D006897A9 /* ImageClassificationInformationView.swift in Sources */,
 			);

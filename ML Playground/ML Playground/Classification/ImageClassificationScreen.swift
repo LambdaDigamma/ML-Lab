@@ -31,7 +31,7 @@ struct ImageClassificationScreen: View {
                 
         } else {
             
-            ImageClassificationEmptyState(
+            PhotoProviderView(
                 onSelectImage: { onAction(.selectPhoto) },
                 onTakePicture: { onAction(.takePhoto) }
             )
@@ -47,7 +47,7 @@ struct ImageClassificationScreen: View {
             
             VStack(spacing: 20) {
                 
-                ImageViewer(image: image)
+                ImageViewer<EmptyView>(image: image)
                 
                 ImageClassificationInformationView(
                     result: viewModel.result
