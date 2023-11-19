@@ -8,6 +8,7 @@
 import Vision
 
 extension VNClassificationObservation {
+    
     /// Generates a string of the observation's confidence as a percentage.
     var confidencePercentageString: String {
         let percentage = confidence * 100
@@ -25,4 +26,5 @@ extension VNClassificationObservation {
                 return String(format: "%2.1f", percentage)
         }
     }
+    
 }

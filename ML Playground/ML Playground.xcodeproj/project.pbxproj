@@ -28,6 +28,8 @@
 		DF0F17682AF44DF1006897A9 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */; };
 		DF0F176A2AF4514E006897A9 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17692AF4514E006897A9 /* Double+Extensions.swift */; };
 		DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */; };
+		DF18E7EF2B063AA600D3C7CA /* ImageClassificationPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18E7EE2B063AA600D3C7CA /* ImageClassificationPrediction.swift */; };
+		DF5215792B09719500E13133 /* Core ML Demo.docc in Sources */ = {isa = PBXBuildFile; fileRef = DF5215782B09719500E13133 /* Core ML Demo.docc */; };
 		DF55259D2AF81C1B00F277A9 /* ModelInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */; };
 		DF55259E2AF81C1B00F277A9 /* PhotoProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55259A2AF81C1B00F277A9 /* PhotoProviderView.swift */; };
 		DF55259F2AF81C1B00F277A9 /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */; };
@@ -69,6 +71,8 @@
 		DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		DF0F17692AF4514E006897A9 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		DF0F176D2AF454FB006897A9 /* BadgeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeContainer.swift; sourceTree = "<group>"; };
+		DF18E7EE2B063AA600D3C7CA /* ImageClassificationPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationPrediction.swift; sourceTree = "<group>"; };
+		DF5215782B09719500E13133 /* Core ML Demo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = "Core ML Demo.docc"; sourceTree = "<group>"; };
 		DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelInformationView.swift; sourceTree = "<group>"; };
 		DF55259A2AF81C1B00F277A9 /* PhotoProviderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoProviderView.swift; sourceTree = "<group>"; };
 		DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				DF0F17382AF40750006897A9 /* Assets.xcassets */,
 				DF0F173A2AF40750006897A9 /* LaunchScreen.storyboard */,
 				DF0F173D2AF40750006897A9 /* Info.plist */,
+				DF5215782B09719500E13133 /* Core ML Demo.docc */,
 			);
 			path = "ML Playground";
 			sourceTree = "<group>";
@@ -159,9 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				DF0F175F2AF4422D006897A9 /* ImageClassificationInformationView.swift */,
+				DF18E7EE2B063AA600D3C7CA /* ImageClassificationPrediction.swift */,
+				DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */,
 				DF0F174E2AF414EF006897A9 /* ImageClassificationViewController.swift */,
 				DF0F17572AF42A63006897A9 /* ImageClassificationViewModel.swift */,
-				DF0F17522AF41848006897A9 /* ImageClassificationScreen.swift */,
 				DF0F17672AF44DF1006897A9 /* ImagePredictor.swift */,
 			);
 			path = Classification;
@@ -300,9 +306,11 @@
 				DF86787F2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift in Sources */,
 				DF0F17442AF4077E006897A9 /* MenuViewController.swift in Sources */,
 				DF8678722AF572B300FDDCD6 /* ObjectDetectionViewController.swift in Sources */,
+				DF18E7EF2B063AA600D3C7CA /* ImageClassificationPrediction.swift in Sources */,
 				DF0F17662AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift in Sources */,
 				DF86787D2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift in Sources */,
 				DF0F17472AF40928006897A9 /* MenuItem.swift in Sources */,
+				DF5215792B09719500E13133 /* Core ML Demo.docc in Sources */,
 				DF0F174F2AF414EF006897A9 /* ImageClassificationViewController.swift in Sources */,
 				DF55259D2AF81C1B00F277A9 /* ModelInformationView.swift in Sources */,
 				DF86786F2AF56D9E00FDDCD6 /* MenuListViewController.swift in Sources */,

@@ -64,6 +64,24 @@ public class ImageClassificationViewModel: ObservableObject {
         
         do {
             try self.imagePredictor.makePredictions(
+                for: image
+            ) { predictions in
+                
+                if let predictions {
+                    
+                    for prediction in predictions {
+                        
+                        print("\(prediction.classification): \(prediction.confidence)")
+                        
+                    }
+                    
+                } else {
+                    print("No result from image predictor.")
+                }
+                
+            }
+            
+            try self.imagePredictor.makePredictions(
                 for: image,
                 completionHandler: imagePredictionHandler
             )
@@ -76,7 +94,7 @@ public class ImageClassificationViewModel: ObservableObject {
     /// The method the Image Predictor calls when its image classifier model generates a prediction.
     /// - Parameter predictions: An array of predictions.
     /// - Tag: imagePredictionHandler
-    private func imagePredictionHandler(_ predictions: [ImagePredictor.Prediction]?) {
+    private func imagePredictionHandler(_ predictions: [ImageClassificationPredication]?) {
         
         DispatchQueue.main.async {
             

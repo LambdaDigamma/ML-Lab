@@ -8,9 +8,12 @@
 import Vision
 import UIKit
 
+/// The function signature the caller must provide as a completion handler.
+typealias ImageClassificationHandler = (_ predictions: [ImageClassificationPredication]?) -> Void
+
 /// A convenience class that makes image classification predictions.
 ///
-/// The Image Predictor creates and reuses an instance of a Core ML image classifier inside a ``VNCoreMLRequest``.
+/// The Image Predictor creates and reuses an instance of a Core ML image classifier inside a ``Vision/VNCoreMLRequest``.
 /// Each time it makes a prediction, the class:
 /// - Creates a `VNImageRequestHandler` with an image
 /// - Starts an image classification request for that image
@@ -20,71 +23,57 @@ import UIKit
 class ImagePredictor {
     
     /// - Tag: name
-    static func createImageClassifier() -> VNCoreMLModel {
+    static func setupModel() -> VNCoreMLModel {
+        
         // Use a default model configuration.
         let defaultConfig = MLModelConfiguration()
         
         // Create an instance of the image classifier's wrapper class.
-        let imageClassifierWrapper = try? SqueezeNet(configuration: defaultConfig)
+        let squeezeNet = try? SqueezeNet(configuration: defaultConfig)
         
-        guard let imageClassifier = imageClassifierWrapper else {
+        guard let squeezeNet = squeezeNet else {
             fatalError("App failed to create an image classifier model instance.")
         }
         
         // Get the underlying model instance.
-        let imageClassifierModel = imageClassifier.model
+        let model = squeezeNet.model
         
         // Create a Vision instance using the image classifier's model instance.
-        guard let imageClassifierVisionModel = try? VNCoreMLModel(for: imageClassifierModel) else {
+        guard let visionModel = try? VNCoreMLModel(for: model) else {
             fatalError("App failed to create a `VNCoreMLModel` instance.")
         }
         
-        return imageClassifierVisionModel
+        return visionModel
+        
     }
     
-    /// A common image classifier instance that all Image Predictor instances use to generate predictions.
+    /// A common image classifier model instance that all Image Predictor instances use to generate predictions.
     ///
     /// Share one ``VNCoreMLModel`` instance --- for each Core ML model file --- across the app,
     /// since each can be expensive in time and resources.
-    private static let imageClassifier = createImageClassifier()
-    
-    /// Stores a classification name and confidence for an image classifier's prediction.
-    /// - Tag: Prediction
-    struct Prediction {
-        /// The name of the object or scene the image classifier recognizes in an image.
-        let classification: String
-        
-        let confidence: VNConfidence
-        
-        /// The image classifier's confidence as a percentage string.
-        ///
-        /// The prediction string doesn't include the % symbol in the string.
-        let confidencePercentage: String
-    }
-    
-    /// The function signature the caller must provide as a completion handler.
-    typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
+    private static let imageClassifierModel = setupModel()
     
     /// A dictionary of prediction handler functions, each keyed by its Vision request.
-    private var predictionHandlers = [VNRequest: ImagePredictionHandler]()
+    private var predictionHandlers = [VNRequest: ImageClassificationHandler]()
     
-    /// Generates a new request instance that uses the Image Predictor's image classifier model.
-    private func createImageClassificationRequest() -> VNImageBasedRequest {
+    /// Generates a new request instance that uses the underlying image classifier model.
+    private func createImageClassificationRequest() -> VNCoreMLRequest {
         // Create an image classification request with an image classifier model.
         
         let imageClassificationRequest = VNCoreMLRequest(
-            model: ImagePredictor.imageClassifier,
+            model: ImagePredictor.imageClassifierModel,
             completionHandler: visionRequestHandler
         )
         
         imageClassificationRequest.imageCropAndScaleOption = .centerCrop
+        
         return imageClassificationRequest
     }
     
     /// Generates an image classification prediction for a photo.
     /// - Parameter photo: An image, typically of an object or a scene.
     /// - Tag: makePredictions
-    func makePredictions(for photo: UIImage, completionHandler: @escaping ImagePredictionHandler) throws {
+    func makePredictions(for photo: UIImage, completionHandler: @escaping ImageClassificationHandler) throws {
         let orientation = CGImagePropertyOrientation(photo.imageOrientation)
         
         guard let photoImage = photo.cgImage else {
@@ -94,7 +83,11 @@ class ImagePredictor {
         let imageClassificationRequest = createImageClassificationRequest()
         predictionHandlers[imageClassificationRequest] = completionHandler
         
-        let handler = VNImageRequestHandler(cgImage: photoImage, orientation: orientation)
+        let handler = VNImageRequestHandler(
+            cgImage: photoImage,
+            orientation: orientation
+        )
+        
         let requests: [VNRequest] = [imageClassificationRequest]
         
         // Start the image classification request.
@@ -115,7 +108,7 @@ class ImagePredictor {
         }
         
         // Start with a `nil` value in case there's a problem.
-        var predictions: [Prediction]? = nil
+        var predictions: [ImageClassificationPredication]? = nil
         
         // Call the client's completion handler after the method returns.
         defer {
@@ -146,8 +139,8 @@ class ImagePredictor {
         
         // Create a prediction array from the observations.
         predictions = observations.map { observation in
-            // Convert each observation into an `ImagePredictor.Prediction` instance.
-            Prediction(
+            // Convert each observation into an `ImageClassificationPredication` instance.
+            ImageClassificationPredication(
                 classification: observation.identifier,
                 confidence: observation.confidence,
                 confidencePercentage: observation.confidencePercentageString

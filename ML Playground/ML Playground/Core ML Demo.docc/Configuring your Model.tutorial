@@ -1,0 +1,35 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Configuring your Model") {
+        <#text#>
+        
+        @Image(source: <#file#>, alt: "<#accessible description#>")
+    }
+    
+    @Section(title: "What's the model configuration?") {
+        @ContentAndMedia {
+            
+            First of all, an `MLModelConfiguration` must be created.
+            This is used to define settings for the way in which a model is "executed".
+            
+            For example, you can set which `computeUnits` are to be used for the interference.
+            
+
+            
+            @Image(source: <#file#>, alt: "<#accessible description#>")
+        }
+        
+        @Steps {
+            @Step {
+                <#text#>
+                
+                @Image(source: <#file#>, alt: "<#accessible description#>")
+            }
+            
+            @Step {
+                <#text#>
+                
+                @Code(name: "<#display name#>", file: <#filename.swift#>)
+            }
+        }
+    }
+}

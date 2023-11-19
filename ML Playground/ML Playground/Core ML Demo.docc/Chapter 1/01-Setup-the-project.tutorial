@@ -1,0 +1,127 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Add the model to your project") {
+        
+        Learn how to add an Core ML file to your app and explore the built-in capabilities of Xcode.
+        
+    }
+    
+    @Section(title: "Getting a model") {
+        
+        @ContentAndMedia {
+        
+            There are multiple ways to obtain a Core ML model. The default file format is `.mlmodel`. You can either build your own model using [Create ML](https://developer.apple.com/machine-learning/create-ml/) or [Core ML Tools](https://apple.github.io/coremltools/docs-guides/source/overview-coremltools.html) to convert existing TensorFlow or PyTorch models to Core ML.
+            
+            You can get and find many Core ML models on the internet. 
+            There are also a few models which Apple provides for demo purposes.
+            
+            In this tutorial, we are going to use an image classification model.
+            You can use an arbitrary image classification models in Core ML format you found on the internet.
+            But we will use the SqueezeNet Core ML model, which you can download from [Apple's ML models](https://developer.apple.com/machine-learning/models/).
+            
+            @Image(source: "01-model-download.png", alt: "Add an accessible description for your image here.")
+        
+        }
+        
+    }
+
+    @Section(title: "Adding your model to Xcode") {
+        
+        @ContentAndMedia {
+            
+            You now should have a `.mlmodel` file available to use in your application.
+            In the case of this tutorial, our model is called `SqueezeNet.mlmodel`.
+            
+            @Image(source: "01-model-preview", alt: "")
+            
+        }
+        
+        
+        
+        @Steps {
+            
+            @Step {
+                
+                Now go ahead and drag and drop your model into the Project Navigator of your Xcode project.
+                Make sure to check __Copy items if needed__.
+                
+                @Image(source: "01-03-copy", alt: "")
+                
+                > Info: __Copy items if needed__ makes that the added file is also being copied to the project directory if it is being draged from an outside source location. Otherwise a file is just linked into the project. 
+                
+            }
+            
+            @Step {
+                
+                Now you should have your model available in the Project Navigator on the left side.
+                Select your `.mlmodel` file to see the Xcode preview of this file.
+                
+                @Image(source: "01-04-model-in-xcode", alt: "")
+                
+            }
+            
+        }
+        
+    }
+    
+    @Section(title: "Exploring the model in Xcode") {
+        
+        @ContentAndMedia {
+            
+            Xcode provides five tabs to inspect and preview the selected Core ML model.
+            
+            Let's take at the top section first. It provides an overview of the model's key attributes like availability (models can require different versions of the operating system) and size. Also we can find a hint that there is some kind of **Model Class** available. But more on that later.
+            
+            Now let's look at the tabs and quickly jump to the most important areas.
+            
+        }
+        
+        @Steps {
+            
+            @Step {
+                
+                One of the most important attributes of an image classifier model is the list of available class labels. 
+                You can find the list of class labels in the tab **General.**
+                
+                @Image(source: "01-05-class-labels", alt: "")
+                
+                ---
+                In this tab you can also find additional metadata of the model like the license, description and some nerdy ML information about model precision and layer distribution.
+                
+            }
+            
+            @Step {
+                
+                Another very useful feature of Xcode is the **Preview** tab for classifier models.
+                You can just drag and drop sample images into the area and quickly get a feedback on the models performance on a stack of images. 
+                
+                > Note: You can also click on the tiny `+` button on the left side of the drop area, select **Import from iPhone or iPad** and then take a photo with your connected device. 
+                
+                @Image(source: "01-06-preview", alt: "")
+                
+            }
+            
+            @Step {
+                
+                The remaining tabs **Predictions, Performance** and **Utilities** are more advanced features and insights.
+                For example, you can create performance reports to test how the models perform on different devices.
+                Model encryption makes it possible to protect your custom models. 
+                
+            }
+            
+        }
+        
+    }
+    
+    @Section(title: "Summary") {
+        
+        
+        @ContentAndMedia {
+            
+            We have now added the model to your Xcode project and explored the built-in capabilities to preview the model.
+            In the next chapter we are going to setup the model in code and built a basic image classifier class.
+            
+        }
+        
+    }
+    
+}
