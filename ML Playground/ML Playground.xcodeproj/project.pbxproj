@@ -469,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
-				DOCC_HOSTING_BASE_PATH = "ml-playground";
+				DOCC_HOSTING_BASE_PATH = "ML-Playground";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ML Playground/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ML Lab";
@@ -500,7 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
-				DOCC_HOSTING_BASE_PATH = "ml-playground";
+				DOCC_HOSTING_BASE_PATH = "ML-Playground";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ML Playground/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ML Lab";
