@@ -1,4 +1,4 @@
-@Tutorials(name: "Add the name of your tutorial here. This usually matches your project's product module name.") {
+@Tutorials(name: "ML Playground") {
     
     @Intro(title: "Implementing an image classifier with Core ML") {
         
