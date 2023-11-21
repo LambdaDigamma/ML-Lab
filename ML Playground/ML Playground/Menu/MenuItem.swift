@@ -12,21 +12,24 @@ import CoreML
 public struct MenuItem: Hashable, Identifiable {
     
     public let id: Int
+    public let appModel: AppModel
     public let title: String
     public let description: String?
     public let backgroundColor: UIColor
     public let foregroundColor: UIColor
-    public let type: MenuItemType
+    public let type: ModelType
     
     public init(
         id: Int,
+        appModel: AppModel,
         text: String,
         description: String? = nil,
-        type: MenuItemType,
+        type: ModelType,
         backgroundColor: UIColor,
         foregroundColor: UIColor
     ) {
         self.id = id
+        self.appModel = appModel
         self.title = text
         self.description = description
         self.type = type
@@ -38,9 +41,4 @@ public struct MenuItem: Hashable, Identifiable {
         hasher.combine(id)
     }
     
-}
-
-public enum MenuItemType: String {
-    case classification = "classification"
-    case objectDetector = "objectDetector"
 }

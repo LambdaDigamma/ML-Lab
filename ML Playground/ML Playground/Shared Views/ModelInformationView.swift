@@ -22,7 +22,7 @@ struct ModelInformationView: View {
     
     var body: some View {
         
-        BadgeContainer(name: "Model", backgroundColor: .orange) {
+        BadgeContainer(name: "Model", backgroundColor: .blue) {
             
             VStack(alignment: .leading, spacing: 24) {
                 
@@ -43,27 +43,14 @@ struct ModelInformationView: View {
             
             Text(label)
                 .foregroundStyle(.secondary)
-//                .fontWeight(.medium)
+                .font(.caption)
             
             Text(text)
+                .font(.subheadline)
                 .fontWeight(.medium)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
         }
-        
-//        GridRow(alignment: .firstTextBaseline) {
-//            
-//            VStack(alignment: .leading) {
-//                Text(label)
-//                    .foregroundStyle(.secondary)
-//                    .fontWeight(.medium)
-//            }
-//            
-//            Text(text)
-//                .fontWeight(.semibold)
-//                .frame(maxWidth: .infinity, alignment: .leading)
-//            
-//        }
         
     }
     

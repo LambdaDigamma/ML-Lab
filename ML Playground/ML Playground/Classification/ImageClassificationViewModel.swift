@@ -26,25 +26,23 @@ public class ImageClassificationViewModel: ObservableObject {
     @Published var image: UIImage?
     @Published var result: DataState<ImageClassificationResult, Error> = .loading
     
-    public let modelInformation: ModelInformation
-    
-    let imagePredictor = ImagePredictor()
-    
-    public init() {
-        
-        let model = try! SqueezeNet(configuration: .init())
-        
-        let description = model.model.modelDescription
-        
-        self.modelInformation = .init(
-            name: "SqueezeNet",
-            description: description.metadata[.init(rawValue: "MLModelDescriptionKey")] as! String,
-            author: (description.metadata[.author] as? String) ?? "",
-            version: description.metadata[.versionString] as? String
+    public var modelInformation: ModelInformation {
+        ModelInformation(
+            name: model.name,
+            description: model.text,
+            author: "",
+            version: nil
         )
-        
     }
     
+    let imagePredictor: ImagePredictor
+    
+    public var model: AppModel
+    
+    public init(model: AppModel) {
+        self.model = model
+        self.imagePredictor = .init(model: model)
+    }
     
     public func updateImage(_ image: UIImage) {
         

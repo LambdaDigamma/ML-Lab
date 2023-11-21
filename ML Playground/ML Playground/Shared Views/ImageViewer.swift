@@ -50,7 +50,7 @@ struct ImageViewer<Overlay: View>: View {
 //        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Material.thin)
         .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(radius: 6)
+        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 6)
         .fullScreenCover(isPresented: $fullscreen, content: {
             PhotoViewer(image: image)
         })

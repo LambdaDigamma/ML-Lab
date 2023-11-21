@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF07928A2B0CD14900644B99 /* OverlayPillCameraButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0792892B0CD14900644B99 /* OverlayPillCameraButtons.swift */; };
+		DF07928C2B0CE15100644B99 /* Cats and Dogs.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF07928B2B0CE15100644B99 /* Cats and Dogs.mlmodel */; };
+		DF0792902B0CE1E200644B99 /* MLContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07928F2B0CE1E200644B99 /* MLContentView.swift */; };
+		DF0792922B0CE49700644B99 /* ImagePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0792912B0CE49700644B99 /* ImagePlaceholderView.swift */; };
+		DF0792942B0CE93900644B99 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0792932B0CE93900644B99 /* ModelType.swift */; };
+		DF0792962B0CEC4F00644B99 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0792952B0CEC4F00644B99 /* AppModel.swift */; };
 		DF0F17302AF4074E006897A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F172F2AF4074E006897A9 /* AppDelegate.swift */; };
 		DF0F17322AF4074E006897A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17312AF4074E006897A9 /* SceneDelegate.swift */; };
 		DF0F17372AF4074E006897A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0F17352AF4074E006897A9 /* Main.storyboard */; };
 		DF0F17392AF40750006897A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0F17382AF40750006897A9 /* Assets.xcassets */; };
 		DF0F173C2AF40750006897A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0F173A2AF40750006897A9 /* LaunchScreen.storyboard */; };
-		DF0F17442AF4077E006897A9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17432AF4077E006897A9 /* MenuViewController.swift */; };
 		DF0F17472AF40928006897A9 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17462AF40928006897A9 /* MenuItem.swift */; };
 		DF0F17492AF40D9E006897A9 /* MenuItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */; };
 		DF0F174C2AF41253006897A9 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */; };
@@ -31,11 +36,9 @@
 		DF18E7EF2B063AA600D3C7CA /* ImageClassificationPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18E7EE2B063AA600D3C7CA /* ImageClassificationPrediction.swift */; };
 		DF5215792B09719500E13133 /* Core ML Demo.docc in Sources */ = {isa = PBXBuildFile; fileRef = DF5215782B09719500E13133 /* Core ML Demo.docc */; };
 		DF55259D2AF81C1B00F277A9 /* ModelInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */; };
-		DF55259E2AF81C1B00F277A9 /* PhotoProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55259A2AF81C1B00F277A9 /* PhotoProviderView.swift */; };
 		DF55259F2AF81C1B00F277A9 /* PhotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */; };
 		DF5525A02AF81C1B00F277A9 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55259C2AF81C1B00F277A9 /* ImageViewer.swift */; };
 		DF8678692AF56AA800FDDCD6 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678682AF56AA800FDDCD6 /* MenuListView.swift */; };
-		DF86786D2AF56BCC00FDDCD6 /* Models+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */; };
 		DF86786F2AF56D9E00FDDCD6 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */; };
 		DF8678722AF572B300FDDCD6 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */; };
 		DF8678742AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */; };
@@ -48,6 +51,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF0792892B0CD14900644B99 /* OverlayPillCameraButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OverlayPillCameraButtons.swift; path = ../OverlayPillCameraButtons.swift; sourceTree = "<group>"; };
+		DF07928B2B0CE15100644B99 /* Cats and Dogs.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Cats and Dogs.mlmodel"; sourceTree = "<group>"; };
+		DF07928F2B0CE1E200644B99 /* MLContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLContentView.swift; sourceTree = "<group>"; };
+		DF0792912B0CE49700644B99 /* ImagePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlaceholderView.swift; sourceTree = "<group>"; };
+		DF0792932B0CE93900644B99 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		DF0792952B0CEC4F00644B99 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		DF0F172C2AF4074E006897A9 /* ML Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ML Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0F172F2AF4074E006897A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0F17312AF4074E006897A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +64,6 @@
 		DF0F17382AF40750006897A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0F173B2AF40750006897A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0F173D2AF40750006897A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF0F17432AF4077E006897A9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "ML Playground/MenuViewController.swift"; sourceTree = SOURCE_ROOT; };
 		DF0F17462AF40928006897A9 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCellView.swift; sourceTree = "<group>"; };
 		DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
@@ -74,11 +82,9 @@
 		DF18E7EE2B063AA600D3C7CA /* ImageClassificationPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationPrediction.swift; sourceTree = "<group>"; };
 		DF5215782B09719500E13133 /* Core ML Demo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = "Core ML Demo.docc"; sourceTree = "<group>"; };
 		DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelInformationView.swift; sourceTree = "<group>"; };
-		DF55259A2AF81C1B00F277A9 /* PhotoProviderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoProviderView.swift; sourceTree = "<group>"; };
 		DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewer.swift; sourceTree = "<group>"; };
 		DF55259C2AF81C1B00F277A9 /* ImageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
 		DF8678682AF56AA800FDDCD6 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
-		DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Extensions.swift"; sourceTree = "<group>"; };
 		DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
 		DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
 		DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "YOLOv3 Tiny Int8 LUT.mlpackage"; sourceTree = "<group>"; };
@@ -120,19 +126,19 @@
 		DF0F172E2AF4074E006897A9 /* ML Playground */ = {
 			isa = PBXGroup;
 			children = (
+				DF5215782B09719500E13133 /* Core ML Demo.docc */,
 				DF0F172F2AF4074E006897A9 /* AppDelegate.swift */,
 				DF0F17312AF4074E006897A9 /* SceneDelegate.swift */,
-				DF5525982AF81C1B00F277A9 /* Common */,
 				DF0F174A2AF41249006897A9 /* Models */,
 				DF0F17452AF4091E006897A9 /* Menu */,
 				DF0F174D2AF413E7006897A9 /* Classification */,
 				DF8678702AF5721200FDDCD6 /* Object Detector */,
+				DF5525982AF81C1B00F277A9 /* Shared Views */,
 				DF0F17542AF419B7006897A9 /* Extensions */,
 				DF0F17352AF4074E006897A9 /* Main.storyboard */,
-				DF0F17382AF40750006897A9 /* Assets.xcassets */,
 				DF0F173A2AF40750006897A9 /* LaunchScreen.storyboard */,
+				DF0F17382AF40750006897A9 /* Assets.xcassets */,
 				DF0F173D2AF40750006897A9 /* Info.plist */,
-				DF5215782B09719500E13133 /* Core ML Demo.docc */,
 			);
 			path = "ML Playground";
 			sourceTree = "<group>";
@@ -140,11 +146,12 @@
 		DF0F17452AF4091E006897A9 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				DF0F17432AF4077E006897A9 /* MenuViewController.swift */,
 				DF0F17462AF40928006897A9 /* MenuItem.swift */,
+				DF0792932B0CE93900644B99 /* ModelType.swift */,
 				DF0F17482AF40D9E006897A9 /* MenuItemCellView.swift */,
 				DF8678682AF56AA800FDDCD6 /* MenuListView.swift */,
 				DF86786E2AF56D9E00FDDCD6 /* MenuListViewController.swift */,
+				DF0792952B0CEC4F00644B99 /* AppModel.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -152,10 +159,10 @@
 		DF0F174A2AF41249006897A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF07928B2B0CE15100644B99 /* Cats and Dogs.mlmodel */,
 				DF8678732AF572EB00FDDCD6 /* YOLOv3 Tiny Int8 LUT.mlpackage */,
 				DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */,
 				DF0F174B2AF41253006897A9 /* SqueezeNet.mlmodel */,
-				DF86786C2AF56BCC00FDDCD6 /* Models+Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,26 +194,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		DF5525982AF81C1B00F277A9 /* Common */ = {
+		DF5525982AF81C1B00F277A9 /* Shared Views */ = {
 			isa = PBXGroup;
 			children = (
-				DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */,
-				DF55259A2AF81C1B00F277A9 /* PhotoProviderView.swift */,
-				DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */,
+				DF0792912B0CE49700644B99 /* ImagePlaceholderView.swift */,
 				DF55259C2AF81C1B00F277A9 /* ImageViewer.swift */,
+				DF07928F2B0CE1E200644B99 /* MLContentView.swift */,
+				DF5525992AF81C1B00F277A9 /* ModelInformationView.swift */,
+				DF0792892B0CD14900644B99 /* OverlayPillCameraButtons.swift */,
+				DF55259B2AF81C1B00F277A9 /* PhotoViewer.swift */,
 			);
-			path = Common;
+			path = "Shared Views";
 			sourceTree = "<group>";
 		};
 		DF8678702AF5721200FDDCD6 /* Object Detector */ = {
 			isa = PBXGroup;
 			children = (
+				DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */,
+				DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */,
 				DF8678712AF572B300FDDCD6 /* ObjectDetectionViewController.swift */,
 				DF8678752AF5745B00FDDCD6 /* ObjectDetector.swift */,
 				DF86787A2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift */,
 				DF86787C2AF57AFF00FDDCD6 /* ObjectDetectorViewModel.swift */,
-				DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */,
-				DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */,
 			);
 			path = "Object Detector";
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF07928C2B0CE15100644B99 /* Cats and Dogs.mlmodel in Sources */,
 				DF0F17492AF40D9E006897A9 /* MenuItemCellView.swift in Sources */,
 				DF0F17682AF44DF1006897A9 /* ImagePredictor.swift in Sources */,
 				DF8678762AF5745B00FDDCD6 /* ObjectDetector.swift in Sources */,
@@ -292,19 +302,18 @@
 				DF0F175E2AF4410D006897A9 /* OverlayButtonStyle.swift in Sources */,
 				DF0F17562AF419CD006897A9 /* UIViewController+Extensions.swift in Sources */,
 				DF55259F2AF81C1B00F277A9 /* PhotoViewer.swift in Sources */,
+				DF0792902B0CE1E200644B99 /* MLContentView.swift in Sources */,
 				DF0F17302AF4074E006897A9 /* AppDelegate.swift in Sources */,
 				DF8678832AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift in Sources */,
 				DF0F17622AF446CD006897A9 /* DataState.swift in Sources */,
+				DF0792962B0CEC4F00644B99 /* AppModel.swift in Sources */,
 				DF0F17532AF41848006897A9 /* ImageClassificationScreen.swift in Sources */,
-				DF86786D2AF56BCC00FDDCD6 /* Models+Extensions.swift in Sources */,
 				DF0F174C2AF41253006897A9 /* SqueezeNet.mlmodel in Sources */,
 				DF0F17322AF4074E006897A9 /* SceneDelegate.swift in Sources */,
-				DF55259E2AF81C1B00F277A9 /* PhotoProviderView.swift in Sources */,
 				DF0F176E2AF454FB006897A9 /* BadgeContainer.swift in Sources */,
 				DF8678812AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel in Sources */,
 				DF8678692AF56AA800FDDCD6 /* MenuListView.swift in Sources */,
 				DF86787F2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift in Sources */,
-				DF0F17442AF4077E006897A9 /* MenuViewController.swift in Sources */,
 				DF8678722AF572B300FDDCD6 /* ObjectDetectionViewController.swift in Sources */,
 				DF18E7EF2B063AA600D3C7CA /* ImageClassificationPrediction.swift in Sources */,
 				DF0F17662AF44C77006897A9 /* VNClassificationObservation+confidenceString.swift in Sources */,
@@ -313,7 +322,10 @@
 				DF5215792B09719500E13133 /* Core ML Demo.docc in Sources */,
 				DF0F174F2AF414EF006897A9 /* ImageClassificationViewController.swift in Sources */,
 				DF55259D2AF81C1B00F277A9 /* ModelInformationView.swift in Sources */,
+				DF0792942B0CE93900644B99 /* ModelType.swift in Sources */,
 				DF86786F2AF56D9E00FDDCD6 /* MenuListViewController.swift in Sources */,
+				DF0792922B0CE49700644B99 /* ImagePlaceholderView.swift in Sources */,
+				DF07928A2B0CD14900644B99 /* OverlayPillCameraButtons.swift in Sources */,
 				DF86787B2AF57ABF00FDDCD6 /* ObjectDetectorScreen.swift in Sources */,
 				DF0F17582AF42A63006897A9 /* ImageClassificationViewModel.swift in Sources */,
 				DF0F17602AF4422D006897A9 /* ImageClassificationInformationView.swift in Sources */,

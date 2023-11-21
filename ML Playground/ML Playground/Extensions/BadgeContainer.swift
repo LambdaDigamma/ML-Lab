@@ -22,9 +22,9 @@ struct BadgeContainer<Content: View>: View {
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Material.thin)
+        .background(Material.ultraThin)
         .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 6)
+        .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.05), radius: 6)
         .overlay(alignment: .topTrailing) {
             
             VStack {

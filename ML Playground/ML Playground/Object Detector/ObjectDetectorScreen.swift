@@ -25,28 +25,12 @@ struct ObjectDetectorScreen: View {
     
     var body: some View {
         
-        if let image = viewModel.image {
+        MLContentView(
+            onTakePhoto: { onAction(.takePhoto) },
+            onSelectImage: { onAction(.selectPhoto) }
+        ) {
             
-            imageExists(image: image)
-            
-            
-        } else {
-            
-            PhotoProviderView(
-                onSelectImage: { onAction(.selectPhoto) },
-                onTakePicture: { onAction(.takePhoto) }
-            )
-            
-        }
-        
-    }
-    
-    @ViewBuilder
-    private func imageExists(image: UIImage) -> some View {
-        
-        ScrollView {
-            
-            VStack(spacing: 20) {
+            if let image = viewModel.image {
                 
                 ImageViewer(image: image) {
                     BoundingBoxOverlayRenderer(items: viewModel.result.value?.items ?? [])
@@ -58,11 +42,15 @@ struct ObjectDetectorScreen: View {
                 
                 ModelInformationView(modelInformation: viewModel.modelInformation)
                 
+            } else {
+                
+                ImagePlaceholderView(type: .objectDetector)
+                
+                ModelInformationView(modelInformation: viewModel.modelInformation)
+                
             }
-            .padding()
             
         }
-        .scrollBounceBehavior(.basedOnSize)
         
     }
     

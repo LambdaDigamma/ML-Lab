@@ -22,7 +22,7 @@ public struct MenuItemCellView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .aspectRatio(2, contentMode: .fit)
             .clipShape(RoundedRectangle(cornerRadius: 12))
-            .shadow(radius: 8)
+            .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.15), radius: 6)
             .overlay(alignment: .topLeading, content: {
                 
                 VStack(alignment: .leading, spacing: 16) {
@@ -38,12 +38,12 @@ public struct MenuItemCellView: View {
                             Text("\(Image(systemName: "dot.viewfinder")) Detector")
                         }
                     }
-                    .foregroundStyle(Color(menuItem.foregroundColor))
+                    .foregroundStyle(Color.secondary)
                     
                     if let description = menuItem.description {
                         
                         Text(description)
-                            .foregroundStyle(Color(menuItem.foregroundColor))
+                            .foregroundStyle(Color.secondary)
                         
                     }
                     
@@ -74,10 +74,11 @@ struct MenuListCellButtonStyle: ButtonStyle {
         MenuItemCellView(
             menuItem: .init(
                 id: 1,
-                text: "Animal Classification",
-                type: .classification,
-                backgroundColor: .orange,
-                foregroundColor: .white
+                appModel: AppModel.squeezeNet,
+                text: AppModel.squeezeNet.text,
+                type: AppModel.squeezeNet.type,
+                backgroundColor: .white,
+                foregroundColor: .black
             )
         )
     }

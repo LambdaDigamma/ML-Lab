@@ -23,20 +23,42 @@ typealias ImageClassificationHandler = (_ predictions: [ImageClassificationPredi
 class ImagePredictor {
     
     /// - Tag: name
-    static func setupModel() -> VNCoreMLModel {
+    static func setupWrapper(with configuration: MLModelConfiguration, for model: AppModel) -> MLModel {
+        
+        switch model {
+            case .squeezeNet:
+                
+                let squeezeNet = try? SqueezeNet(configuration: configuration)
+                
+                guard let squeezeNet = squeezeNet else {
+                    fatalError("App failed to create an image classifier model instance.")
+                }
+                
+                return squeezeNet.model
+                
+            case .catsAndDogs:
+                
+                let catsAndDogs = try? Cats_and_Dogs(configuration: configuration)
+                
+                guard let catsAndDogs = catsAndDogs else {
+                    fatalError("App failed to create an image classifier model instance.")
+                }
+                
+                return catsAndDogs.model
+                
+            default:
+                fatalError("This model is not implemented yet.")
+        }
+        
+    }
+    
+    private static func setupModel(model: AppModel) -> VNCoreMLModel {
         
         // Use a default model configuration.
         let defaultConfig = MLModelConfiguration()
         
-        // Create an instance of the image classifier's wrapper class.
-        let squeezeNet = try? SqueezeNet(configuration: defaultConfig)
-        
-        guard let squeezeNet = squeezeNet else {
-            fatalError("App failed to create an image classifier model instance.")
-        }
-        
         // Get the underlying model instance.
-        let model = squeezeNet.model
+        let model = setupWrapper(with: defaultConfig, for: model)
         
         // Create a Vision instance using the image classifier's model instance.
         guard let visionModel = try? VNCoreMLModel(for: model) else {
@@ -47,11 +69,19 @@ class ImagePredictor {
         
     }
     
-    /// A common image classifier model instance that all Image Predictor instances use to generate predictions.
-    ///
-    /// Share one ``VNCoreMLModel`` instance --- for each Core ML model file --- across the app,
-    /// since each can be expensive in time and resources.
-    private static let imageClassifierModel = setupModel()
+    private let model: VNCoreMLModel
+    
+    public init(model: AppModel) {
+        
+        switch model {
+            case .catsAndDogs:
+                self.model = Self.setupModel(model: model)
+            case .squeezeNet:
+                self.model = Self.setupModel(model: model)
+            default: fatalError("This model is not implemented yet.")
+        }
+        
+    }
     
     /// A dictionary of prediction handler functions, each keyed by its Vision request.
     private var predictionHandlers = [VNRequest: ImageClassificationHandler]()
@@ -61,7 +91,7 @@ class ImagePredictor {
         // Create an image classification request with an image classifier model.
         
         let imageClassificationRequest = VNCoreMLRequest(
-            model: ImagePredictor.imageClassifierModel,
+            model: self.model,
             completionHandler: visionRequestHandler
         )
         

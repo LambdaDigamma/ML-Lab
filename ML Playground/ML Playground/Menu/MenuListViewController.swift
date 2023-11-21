@@ -30,7 +30,9 @@ class MenuListViewController: UIViewController {
         
         if item.type == .classification {
             
-            let imageController = ImageClassificationViewController()
+            let imageController = ImageClassificationViewController(
+                model: item.appModel
+            )
             
             self.navigationController?.pushViewController(imageController, animated: true)
             

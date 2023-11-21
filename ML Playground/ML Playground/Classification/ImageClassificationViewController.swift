@@ -18,7 +18,19 @@ enum ImageClassificationAction {
 
 class ImageClassificationViewController: UIViewController {
 
-    private let viewModel: ImageClassificationViewModel = ImageClassificationViewModel()
+    private let viewModel: ImageClassificationViewModel
+    
+    public let model: AppModel
+    
+    init(model: AppModel) {
+        self.model = model
+        self.viewModel = ImageClassificationViewModel(model: model)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - UIViewController Lifecycle -
     
