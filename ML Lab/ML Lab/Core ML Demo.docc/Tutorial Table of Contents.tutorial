@@ -1,0 +1,37 @@
+@Tutorials(name: "ML Lab") {
+    
+    @Intro(title: "Implementing an image classifier with Core ML") {
+        
+        Add and implement an image classifier Core ML model into your application.
+        
+        @Image(source: "toc-introduction-image-filename.png", alt: "Add an accessible description for your image here.")
+    }
+    
+    @Chapter(name: "Add the model to your project") {
+        Learn how to add an existing Core ML model to your app and explore Xcode's built-in capabilities.
+        
+        @Image(source: "chapter-image-filename-here.png", alt: "Add an accessible description for your image here.")
+        
+        @TutorialReference(tutorial: "doc:01-Setup-the-project")
+        
+        
+    }
+    
+    @Chapter(name: "Setup and implement the classifier") {
+        
+        Setup an image classification model and implement the classification class. 
+        
+        @Image(source: "chapter-image-filename-here.png", alt: "Add an accessible description for your image here.")
+        
+        @TutorialReference(tutorial: "doc:02-setup-implement-model")
+        
+    }
+    
+    
+    @Chapter(name: "Add the next chapter title here.") {
+        
+    }
+    
+    
+    
+}
