@@ -1,7 +1,7 @@
-let imageClassifier = imageClassifier()
+let imageClassifier = ImageClassifier()
 
 // Load an image from Asset Catalogue
-let image = UIImage(named: "example")
+let image = UIImage(named: "example")!
 
 do {
     
@@ -13,7 +13,7 @@ do {
         if let predictions {
             
             for prediction in predictions {
-                print("\(prediction.classification): \(prediction.confidence)")
+                print("\(prediction.label): \(prediction.confidence)")
             }
             
         } else {

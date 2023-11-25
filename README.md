@@ -22,6 +22,12 @@ Available models:
 We have built a step-by-step tutorial to implement an image classifier using Core ML.
 You can find it [here](https://lambdadigamma.github.io/ML-Lab/tutorials/tutorial-table-of-contents).
 
+![](.art/step-by-step-tutorial.png)
+
+### Minimal reproduction sample
+
+We have also included a minimal sample application which just loads an image from the assets and prints the results of the image classifier to the console.
+You can find it in the folder "Image Classifier Example" and run it. This is also the code which is created in the step-by-step tutorial.
 
 
 ## Contributors
