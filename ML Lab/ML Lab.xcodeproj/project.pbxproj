@@ -239,7 +239,7 @@
 			dependencies = (
 			);
 			name = "ML Lab";
-			productName = "ML Playground";
+			productName = "ML Lab";
 			productReference = DF0F172C2AF4074E006897A9 /* ML Lab.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -485,7 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
-				DOCC_HOSTING_BASE_PATH = "ML-Playground";
+				DOCC_HOSTING_BASE_PATH = "ML-Lab";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ML Lab/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ML Lab";
@@ -516,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
-				DOCC_HOSTING_BASE_PATH = "ML-Playground";
+				DOCC_HOSTING_BASE_PATH = "ML-Lab";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ML Lab/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "ML Lab";

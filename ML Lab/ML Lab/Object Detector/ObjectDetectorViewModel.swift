@@ -1,6 +1,6 @@
 //
 //  ObjectDetectorViewModel.swift
-//  ML Playground
+//  ML Lab
 //
 //  Created by Lennart Fischer on 03.11.23.
 //

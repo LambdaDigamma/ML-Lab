@@ -1,6 +1,6 @@
 //
 //  ImageClassification.swift
-//  ML Playground
+//  ML Lab
 //
 //  Created by Lennart Fischer on 16.11.23.
 //

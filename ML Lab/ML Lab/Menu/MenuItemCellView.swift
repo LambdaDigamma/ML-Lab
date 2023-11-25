@@ -1,6 +1,6 @@
 //
 //  MenuItemCellView.swift
-//  ML Playground
+//  ML Lab
 //
 //  Created by Lennart Fischer on 02.11.23.
 //

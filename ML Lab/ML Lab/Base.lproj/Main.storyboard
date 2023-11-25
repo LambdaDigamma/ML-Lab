@@ -29,7 +29,7 @@
         <!--Overview-->
         <scene sceneID="0cy-83-D1v">
             <objects>
-                <viewController id="eoN-QZ-LDT" customClass="MenuListViewController" customModule="ML_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eoN-QZ-LDT" customClass="MenuListViewController" customModule="ML_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dnh-5y-FBH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

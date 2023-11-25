@@ -1,6 +1,6 @@
 //
 //  ModelType.swift
-//  ML Playground
+//  ML Lab
 //
 //  Created by Lennart Fischer on 21.11.23.
 //
