@@ -48,6 +48,7 @@
 		DF86787F2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */; };
 		DF8678812AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */; };
 		DF8678832AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */; };
+		DF8B41E02B1215B90005828B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF8B41DF2B1215B90005828B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		DF86787E2AF59E9E00FDDCD6 /* BoundingBoxOverlayRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxOverlayRenderer.swift; sourceTree = "<group>"; };
 		DF8678802AF5A0D100FDDCD6 /* YOLOv3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Int8LUT.mlmodel; sourceTree = "<group>"; };
 		DF8678822AF5A48A00FDDCD6 /* ObjectClassificationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectClassificationInformationView.swift; sourceTree = "<group>"; };
+		DF8B41DF2B1215B90005828B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		DF0F17232AF4074E006897A9 = {
 			isa = PBXGroup;
 			children = (
+				DF8B41DF2B1215B90005828B /* README.md */,
 				DF0F172E2AF4074E006897A9 /* ML Playground */,
 				DF0F172D2AF4074E006897A9 /* Products */,
 			);
@@ -280,6 +283,7 @@
 			files = (
 				DF0F173C2AF40750006897A9 /* LaunchScreen.storyboard in Resources */,
 				DF0F17392AF40750006897A9 /* Assets.xcassets in Resources */,
+				DF8B41E02B1215B90005828B /* README.md in Resources */,
 				DF0F17372AF4074E006897A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
 				DOCC_HOSTING_BASE_PATH = "ML-Playground";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -510,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 77N8D7LGCZ;
 				DOCC_HOSTING_BASE_PATH = "ML-Playground";
 				GENERATE_INFOPLIST_FILE = YES;

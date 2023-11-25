@@ -18,7 +18,7 @@ public struct MenuItemCellView: View {
     public var body: some View {
         
         Rectangle()
-            .fill(Color(menuItem.backgroundColor))
+            .fill(Color(UIColor.systemBackground))
             .frame(maxWidth: .infinity, alignment: .leading)
             .aspectRatio(2, contentMode: .fit)
             .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -28,7 +28,7 @@ public struct MenuItemCellView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     
                     Text(menuItem.title)
-                        .foregroundStyle(Color(menuItem.foregroundColor))
+                        .foregroundStyle(.primary)
                         .font(.title2.weight(.bold))
                     
                     Group {
